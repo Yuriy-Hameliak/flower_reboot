@@ -9,7 +9,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.*;
 @Data@Entity@Table(name="flowers")
-public class Flower {
+public class Flower extends Item{
     private String name;
     private String color;
     private double price;
@@ -25,5 +25,12 @@ public class Flower {
         this.price = price;
         this.available = available;
     }
-    
+    @Override
+    public double price() {
+        return price;
+    }
+    @Override
+    public String getDescription() {
+        return color+name+" by "+price+"$ is available: "+available;
+    }
 }
