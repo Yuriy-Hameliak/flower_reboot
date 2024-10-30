@@ -1,0 +1,13 @@
+
+GET http://localhost:8080/api/v1/flowers
+
+### Test POST Add Flower
+POST http://localhost:8080/api/v1/flowers
+Content-Type: application/json
+
+{
+  "name": "Tulip",
+  "color": "Yellow",
+  "price": 10.5,
+  "available": true
+}
