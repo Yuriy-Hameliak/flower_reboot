@@ -31,6 +31,6 @@ public class Flower extends Item{
     }
     @Override
     public String getDescription() {
-        return color+name+" by "+price+"$ is available: "+available;
+        return color+" "+name+" by "+price+"$ is available: "+available;
     }
 }
