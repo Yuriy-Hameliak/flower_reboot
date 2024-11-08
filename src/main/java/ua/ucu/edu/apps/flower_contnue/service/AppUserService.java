@@ -16,11 +16,11 @@ public class AppUserService {
         this.appUserRepository = appUserRepository;
     }
 
-    public List<AppUser> getFlowers() {
+    public List<AppUser> getAppUsers() {
         return appUserRepository.findAll();
     }
 
-    public AppUser addFlower(AppUser user) {
+    public AppUser addAppUser(AppUser user) {
         return appUserRepository.save(user);
     }
     public AppUser getUserByEmail(String email){

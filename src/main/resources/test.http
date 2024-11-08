@@ -32,3 +32,13 @@ Content-Type: application/json
   "dob" : "2008-03-07",
   "status" : "sended"
 }
+
+###
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "email": "yura@gmail.com",
+  "dob" : "2006-03-07",
+  "status" : "sended"
+}

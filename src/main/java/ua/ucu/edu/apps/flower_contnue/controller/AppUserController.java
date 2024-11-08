@@ -25,8 +25,8 @@ public class AppUserController {
     }
 
     @GetMapping
-    public List<AppUser> getFlowers() {
-        return appUserService.getFlowers();
+    public List<AppUser> getAppUsers() {
+        return appUserService.getAppUsers();
     }
     @GetMapping("/email")
     public ResponseEntity<AppUser> getUserByEmail(@RequestParam String email) {
@@ -39,7 +39,7 @@ public class AppUserController {
     
 
     @PostMapping
-    public AppUser createFlower(@RequestBody AppUser user) {
-        return appUserService.addFlower(user);
+    public AppUser createAppUser(@RequestBody AppUser user) {
+        return appUserService.addAppUser(user);
     }
 }
