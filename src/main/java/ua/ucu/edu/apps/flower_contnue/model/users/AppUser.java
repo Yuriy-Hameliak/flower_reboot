@@ -1,4 +1,4 @@
-package ua.ucu.edu.apps.flower_contnue.model;
+package ua.ucu.edu.apps.flower_contnue.model.users;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,7 +14,7 @@ import jakarta.persistence.GenerationType;
 import lombok.*;
 @Data
 @Entity(name="app_user")
-public class AppUser {
+public class AppUser{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -23,8 +23,8 @@ public class AppUser {
     private LocalDate dob;
     @Transient
     private Integer age;
+    private String status;
     public Integer getAge(){
         return Period.between(dob, LocalDate.now()).getYears();
     }
-
 }

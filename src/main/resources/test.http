@@ -29,5 +29,6 @@ Content-Type: application/json
 
 {
   "email": "hihi@gmail.com",
-  "dob" : "2008-03-07"
+  "dob" : "2008-03-07",
+  "status" : "sended"
 }
